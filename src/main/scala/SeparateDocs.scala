@@ -12,6 +12,7 @@ object SeparateDocs {
     val reader = new BufferedReader(new FileReader(fileIn))
 
     var name = 0
+    reader.readLine() // skip 01 line
     var line = reader.readLine()
     while (line != null) {
       println("Writing file " + name + "...")
